@@ -42,3 +42,12 @@ while True:
             break
         except ValueError:
             print("Invalid input: Please enter numeric values.")
+            
+            
+    # Store data in dictionary
+    salary_data[month] = {
+        "salary": salary,
+        "saving": saving,
+        "rent": rent,
+        "electricity": electricity
+    }
