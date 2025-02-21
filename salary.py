@@ -78,3 +78,9 @@ while True:
     print(f"Estimated yearly electricity cost: ${electricity_yearly:.2f}")
     print(f"Salary squared (just for fun): {salary_squared:.2f}")
     print(f"Left over savings if $50 is added: {left_over:.2f} times the amount allocated to savings.")
+    
+    # Ask if the user wants to stop
+    stop = input("\nDo you want to stop entering data? (yes/no): ").strip().lower()
+    if stop == "yes":
+        print("\nStopping the program. Thank you!")
+        break
