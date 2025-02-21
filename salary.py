@@ -65,3 +65,16 @@ while True:
 
     additional_savings = 50
     left_over = additional_savings / amount_saving if amount_saving != 0 else 0
+    
+    # Display financial summary
+    print(f"\n--- Financial Summary for {month.capitalize()} ---")
+    print(f"Salary: ${salary:.2f}")
+    print(f"Amount allocated to savings: ${amount_saving:.2f}")
+    print(f"Amount allocated to rent: ${amount_rent:.2f}")
+    print(f"Amount allocated to electricity: ${amount_electricity:.2f}")
+    print(f"Total spending on savings, rent, and electricity: ${total_spending:.2f}")
+    print(f"Remainder of salary: ${remainder:.2f}")
+    print(f"Estimated yearly rent: ${rent_yearly:.2f}")
+    print(f"Estimated yearly electricity cost: ${electricity_yearly:.2f}")
+    print(f"Salary squared (just for fun): {salary_squared:.2f}")
+    print(f"Left over savings if $50 is added: {left_over:.2f} times the amount allocated to savings.")
