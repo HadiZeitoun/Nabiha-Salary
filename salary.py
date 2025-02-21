@@ -51,3 +51,17 @@ while True:
         "rent": rent,
         "electricity": electricity
     }
+    
+        # Perform calculations
+    amount_saving = salary * (saving / 100)
+    amount_rent = salary * (rent / 100)
+    amount_electricity = salary * (electricity / 100)
+
+    total_spending = amount_saving + amount_rent + amount_electricity
+    remainder = salary - total_spending
+    rent_yearly = amount_rent * 12
+    electricity_yearly = amount_electricity * 12
+    salary_squared = salary ** 2
+
+    additional_savings = 50
+    left_over = additional_savings / amount_saving if amount_saving != 0 else 0
